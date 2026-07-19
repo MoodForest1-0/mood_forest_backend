@@ -248,7 +248,7 @@ def detect_emotion():
                 img_path=frame,
                 actions=["emotion"],
                 enforce_detection=False,
-                detector_backend="opencv"
+                detector_backend="retinaface"
             )
 
             emotion_scores = result[0]["emotion"]
@@ -425,4 +425,9 @@ def health():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    app.run(
+        host="127.0.0.1",
+        port=5000,
+        debug=True,
+        use_reloader=False
+    )
