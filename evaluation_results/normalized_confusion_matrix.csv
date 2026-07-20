@@ -1,0 +1,6 @@
+,predicted_angry,predicted_fear,predicted_happy,predicted_neutral,predicted_sad
+actual_angry,1.0,0.0,0.0,0.0,0.0
+actual_fear,0.0,0.0,0.0,0.0,0.0
+actual_happy,0.0,0.0,0.9230769230769231,0.07692307692307693,0.0
+actual_neutral,0.0,0.0,0.0,1.0,0.0
+actual_sad,0.0,0.0,0.0,1.0,0.0

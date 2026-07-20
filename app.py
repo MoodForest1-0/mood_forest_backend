@@ -194,7 +194,8 @@ def fuse_scores(face_scores, journal_scores, face_weight=0.6, journal_weight=0.4
         fused[emotion] = (
             safe_float(face_scores.get(emotion, 0)) * safe_float(face_weight)
             +
-            safe_float(journal_scores.get(emotion, 0)) * safe_float(journal_weight)
+            safe_float(journal_scores.get(emotion, 0)) *
+            safe_float(journal_weight)
         )
 
     return normalize_scores(fused)
@@ -248,7 +249,7 @@ def detect_emotion():
                 img_path=frame,
                 actions=["emotion"],
                 enforce_detection=False,
-                detector_backend="retinaface"
+                detector_backend="opencv"
             )
 
             emotion_scores = result[0]["emotion"]

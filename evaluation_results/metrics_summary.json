@@ -1,0 +1,156 @@
+{
+    "dataset": "test_dataset",
+    "labels": [
+        "angry",
+        "fear",
+        "happy",
+        "neutral",
+        "sad"
+    ],
+    "total_images_found": 207,
+    "scored_images": 25,
+    "skipped_low_quality": 182,
+    "failed_images": 0,
+    "correct_predictions": 23,
+    "incorrect_predictions": 2,
+    "low_confidence_predictions": 0,
+    "accuracy": 0.92,
+    "accuracy_percentage": 92.0,
+    "high_confidence_only_accuracy": 0.92,
+    "high_confidence_only_accuracy_percentage": 92.0,
+    "macro_precision": 0.5636,
+    "macro_recall": 0.5846,
+    "macro_f1_score": 0.572,
+    "weighted_precision": 0.8945,
+    "weighted_recall": 0.92,
+    "weighted_f1_score": 0.9032,
+    "total_processing_time_seconds": 4.15,
+    "average_processing_time_seconds": 0.0201,
+    "detector_backend": "opencv",
+    "enforce_detection": true,
+    "tta_variants": [
+        "original",
+        "flipped",
+        "brighter",
+        "darker",
+        "clahe"
+    ],
+    "quality_thresholds": {
+        "min_blur_variance": 60.0,
+        "min_brightness": 40.0,
+        "max_brightness": 220.0,
+        "min_face_fraction": 0.06
+    },
+    "low_confidence_threshold_percent": 40.0,
+    "per_class_metrics": {
+        "angry": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1_score": 1.0,
+            "specificity": 1.0,
+            "support": 2
+        },
+        "fear": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "specificity": 1.0,
+            "support": 0
+        },
+        "happy": {
+            "precision": 1.0,
+            "recall": 0.9231,
+            "f1_score": 0.96,
+            "specificity": 1.0,
+            "support": 13
+        },
+        "neutral": {
+            "precision": 0.8182,
+            "recall": 1.0,
+            "f1_score": 0.9,
+            "specificity": 0.875,
+            "support": 9
+        },
+        "sad": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1_score": 0.0,
+            "specificity": 1.0,
+            "support": 1
+        }
+    },
+    "confusion_matrix": [
+        [
+            2,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        [
+            0,
+            0,
+            12,
+            1,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            9,
+            0
+        ],
+        [
+            0,
+            0,
+            0,
+            1,
+            0
+        ]
+    ],
+    "normalized_confusion_matrix": [
+        [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            0.9231,
+            0.0769,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ],
+        [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0
+        ]
+    ]
+}

@@ -1,0 +1,91 @@
+================================================================================
+MOODFOREST DEEPFACE EVALUATION SUMMARY (Quality-Aware + TTA)
+================================================================================
+Total images found        : 207
+Scored (used in metrics)  : 25
+Skipped (low quality)     : 182
+Failed (DeepFace error)   : 0
+Correct predictions       : 23
+Incorrect predictions     : 2
+Low-confidence predictions: 0
+
+Accuracy (all scored)          : 0.9200 (92.00%)
+Accuracy (high-confidence only): 0.9200 (92.00%)
+
+Macro precision           : 0.5636
+Macro recall              : 0.5846
+Macro F1-score            : 0.5720
+
+Weighted precision        : 0.8945
+Weighted recall           : 0.9200
+Weighted F1-score         : 0.9032
+
+Total processing time     : 4.15 seconds
+Average time per image    : 0.0201 seconds
+
+PER-CLASS METRICS
+--------------------------------------------------------------------------------
+ANGRY:
+  Precision   : 1.0000
+  Recall      : 1.0000
+  F1-score    : 1.0000
+  Specificity : 1.0000
+  Support     : 2
+
+FEAR:
+  Precision   : 0.0000
+  Recall      : 0.0000
+  F1-score    : 0.0000
+  Specificity : 1.0000
+  Support     : 0
+
+HAPPY:
+  Precision   : 1.0000
+  Recall      : 0.9231
+  F1-score    : 0.9600
+  Specificity : 1.0000
+  Support     : 13
+
+NEUTRAL:
+  Precision   : 0.8182
+  Recall      : 1.0000
+  F1-score    : 0.9000
+  Specificity : 0.8750
+  Support     : 9
+
+SAD:
+  Precision   : 0.0000
+  Recall      : 0.0000
+  F1-score    : 0.0000
+  Specificity : 1.0000
+  Support     : 1
+
+SKIP REASONS BREAKDOWN
+--------------------------------------------------------------------------------
+  no_face_detected (Face could not be detected in numpy array.Please confirm that the picture is a face photo or consider to set enforce_detection param to False.): 182
+
+CONFUSION MATRIX
+--------------------------------------------------------------------------------
+Rows = actual labels
+Columns = predicted labels
+
+                predicted_angry  predicted_fear  predicted_happy  predicted_neutral  predicted_sad
+actual_angry                  2               0                0                  0              0
+actual_fear                   0               0                0                  0              0
+actual_happy                  0               0               12                  1              0
+actual_neutral                0               0                0                  9              0
+actual_sad                    0               0                0                  1              0
+
+CLASSIFICATION REPORT
+--------------------------------------------------------------------------------
+              precision    recall  f1-score   support
+
+       angry     1.0000    1.0000    1.0000         2
+        fear     0.0000    0.0000    0.0000         0
+       happy     1.0000    0.9231    0.9600        13
+     neutral     0.8182    1.0000    0.9000         9
+         sad     0.0000    0.0000    0.0000         1
+
+    accuracy                         0.9200        25
+   macro avg     0.5636    0.5846    0.5720        25
+weighted avg     0.8945    0.9200    0.9032        25
