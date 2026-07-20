@@ -7,25 +7,25 @@
         "neutral",
         "sad"
     ],
-    "total_images_found": 207,
-    "scored_images": 25,
-    "skipped_low_quality": 182,
+    "total_images_found": 7456,
+    "scored_images": 604,
+    "skipped_low_quality": 6852,
     "failed_images": 0,
-    "correct_predictions": 23,
-    "incorrect_predictions": 2,
-    "low_confidence_predictions": 0,
-    "accuracy": 0.92,
-    "accuracy_percentage": 92.0,
-    "high_confidence_only_accuracy": 0.92,
-    "high_confidence_only_accuracy_percentage": 92.0,
-    "macro_precision": 0.5636,
-    "macro_recall": 0.5846,
-    "macro_f1_score": 0.572,
-    "weighted_precision": 0.8945,
-    "weighted_recall": 0.92,
-    "weighted_f1_score": 0.9032,
-    "total_processing_time_seconds": 4.15,
-    "average_processing_time_seconds": 0.0201,
+    "correct_predictions": 483,
+    "incorrect_predictions": 121,
+    "low_confidence_predictions": 20,
+    "accuracy": 0.7997,
+    "accuracy_percentage": 79.97,
+    "high_confidence_only_accuracy": 0.8168,
+    "high_confidence_only_accuracy_percentage": 81.68,
+    "macro_precision": 0.6231,
+    "macro_recall": 0.6657,
+    "macro_f1_score": 0.5997,
+    "weighted_precision": 0.8384,
+    "weighted_recall": 0.7997,
+    "weighted_f1_score": 0.8127,
+    "total_processing_time_seconds": 230.12,
+    "average_processing_time_seconds": 0.0309,
     "detector_backend": "opencv",
     "enforce_detection": true,
     "tta_variants": [
@@ -44,113 +44,113 @@
     "low_confidence_threshold_percent": 40.0,
     "per_class_metrics": {
         "angry": {
-            "precision": 1.0,
-            "recall": 1.0,
-            "f1_score": 1.0,
-            "specificity": 1.0,
-            "support": 2
+            "precision": 0.6981,
+            "recall": 0.5692,
+            "f1_score": 0.6271,
+            "specificity": 0.9703,
+            "support": 65
         },
         "fear": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1_score": 0.0,
-            "specificity": 1.0,
-            "support": 0
+            "precision": 0.6562,
+            "recall": 0.4375,
+            "f1_score": 0.525,
+            "specificity": 0.9802,
+            "support": 48
         },
         "happy": {
-            "precision": 1.0,
-            "recall": 0.9231,
-            "f1_score": 0.96,
-            "specificity": 1.0,
-            "support": 13
+            "precision": 0.9609,
+            "recall": 0.8806,
+            "f1_score": 0.919,
+            "specificity": 0.9554,
+            "support": 335
         },
         "neutral": {
-            "precision": 0.8182,
-            "recall": 1.0,
-            "f1_score": 0.9,
-            "specificity": 0.875,
-            "support": 9
+            "precision": 0.7095,
+            "recall": 0.8411,
+            "f1_score": 0.7697,
+            "specificity": 0.8852,
+            "support": 151
         },
         "sad": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "f1_score": 0.0,
-            "specificity": 1.0,
-            "support": 1
+            "precision": 0.0909,
+            "recall": 0.6,
+            "f1_score": 0.1579,
+            "specificity": 0.9499,
+            "support": 5
         }
     },
     "confusion_matrix": [
         [
-            2,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
-            0,
-            0,
-            0,
-            0,
-            0
-        ],
-        [
-            0,
-            0,
+            37,
+            4,
+            3,
             12,
-            1,
-            0
+            9
         ],
         [
-            0,
-            0,
-            0,
             9,
-            0
+            21,
+            1,
+            12,
+            5
         ],
         [
+            2,
+            7,
+            295,
+            27,
+            4
+        ],
+        [
+            4,
             0,
+            8,
+            127,
+            12
+        ],
+        [
+            1,
             0,
             0,
             1,
-            0
+            3
         ]
     ],
     "normalized_confusion_matrix": [
         [
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0.5692,
+            0.0615,
+            0.0462,
+            0.1846,
+            0.1385
         ],
         [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            0.0
+            0.1875,
+            0.4375,
+            0.0208,
+            0.25,
+            0.1042
         ],
         [
-            0.0,
-            0.0,
-            0.9231,
-            0.0769,
-            0.0
+            0.006,
+            0.0209,
+            0.8806,
+            0.0806,
+            0.0119
         ],
         [
+            0.0265,
             0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
+            0.053,
+            0.8411,
+            0.0795
         ],
         [
+            0.2,
             0.0,
             0.0,
-            0.0,
-            1.0,
-            0.0
+            0.2,
+            0.6
         ]
     ]
 }

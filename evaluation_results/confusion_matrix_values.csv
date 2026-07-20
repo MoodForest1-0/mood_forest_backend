@@ -1,6 +1,6 @@
 ,predicted_angry,predicted_fear,predicted_happy,predicted_neutral,predicted_sad
-actual_angry,2,0,0,0,0
-actual_fear,0,0,0,0,0
-actual_happy,0,0,12,1,0
-actual_neutral,0,0,0,9,0
-actual_sad,0,0,0,1,0
+actual_angry,37,4,3,12,9
+actual_fear,9,21,1,12,5
+actual_happy,2,7,295,27,4
+actual_neutral,4,0,8,127,12
+actual_sad,1,0,0,1,3
